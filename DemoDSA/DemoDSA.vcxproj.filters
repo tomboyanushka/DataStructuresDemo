@@ -21,16 +21,10 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DataStructureDemo.h">
+    <ClInclude Include="Stack.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="createStack.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="createQueue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="createLinkedList.h">
+    <ClInclude Include="Xyz.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -38,16 +32,13 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DataStructureDemo.cpp">
+    <ClCompile Include="DemoDSA.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="createStack.cpp">
+    <ClCompile Include="Stack.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="createQueue.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="createLinkedList.cpp">
+    <ClCompile Include="Xyz.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

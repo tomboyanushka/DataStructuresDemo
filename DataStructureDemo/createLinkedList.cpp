@@ -1,16 +1,15 @@
-#include "LinkedList.h"
-#include "stdafx.h"
 
+#include "createLinkedList.h"
 
-
-struct node 
+using namespace std;
+struct node
 {
 	int x;
 	node *next;
 };
 
 
-void LinkedList::createLinkedList()
+void createLinkedList::LinkedList()
 {
 	node* root;
 	node* temp;

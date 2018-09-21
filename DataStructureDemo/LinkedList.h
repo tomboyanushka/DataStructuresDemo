@@ -5,7 +5,6 @@
 class LinkedList
 {
 public: 
-	LinkedList();
-	~LinkedList();
 
+	void createLinkedList();
 };
