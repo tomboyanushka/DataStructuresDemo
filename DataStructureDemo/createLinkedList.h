@@ -4,7 +4,7 @@
 using namespace std;
 struct Node
 {
-	int x;
+	int data;
 	Node* next;
 };
 
@@ -12,8 +12,10 @@ class createLinkedList
 {
 	Node* root;
 	Node* rear;
+	
 
 public:
+	
 	createLinkedList() 
 	{
 		root = NULL;
@@ -27,5 +29,9 @@ public:
 	void remove(int data);
 	void showList();
 	void LinkedList();
+	int length();
+	void printMiddle();
+	void swapNodes(int x, int y);
+	void reverseList();
 };
 

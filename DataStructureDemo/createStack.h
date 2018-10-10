@@ -9,7 +9,7 @@ public:
 	createStack() {};
 	~createStack() {};
 	T array[SIZE];
-	void push(T x);
+	void push(T data);
 	void pop();
 	void showTop();
 	void peek();
@@ -21,7 +21,7 @@ public:
 
 using namespace std;
 template<class T>
-void createStack<T>::push(T x)
+void createStack<T>::push(T data)
 {
 	//add to last
 	if (top == SIZE - 1)
@@ -31,7 +31,7 @@ void createStack<T>::push(T x)
 	else
 	{
 		top++;
-		array[top] = x;
+		array[top] = data;
 	}
 }
 
