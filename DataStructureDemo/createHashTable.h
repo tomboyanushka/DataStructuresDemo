@@ -1,4 +1,5 @@
 #pragma once
+//https://stackoverflow.com/questions/35827459/assigning-a-new-task-to-a-thread-after-the-thread-completes-in-c/35829560#35829560
 //https://www.geeksforgeeks.org/implementing-hash-table-open-addressing-linear-probing-cpp/
 using namespace std;
 
@@ -39,6 +40,11 @@ public:
 
 		dummy = new HashNode<K, V>(-1, -1);
 	};
+
+	int hashCode(K key)
+	{
+		return key % capacity;
+	}
 	~createHashTable() {};
 
 
