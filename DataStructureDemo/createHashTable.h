@@ -18,7 +18,7 @@ public:
 	HashNode(K key, V value)
 	{
 		this->value = value;
-		this.key = key;
+		this->key = key;
 	}
 };
 
@@ -97,7 +97,7 @@ public:
 			hashIndex++;
 			hashIndex %= capacity;
 		}
-		return nullptr; //if not found
+		return 0; //if not found
 	}
 
 	V get(K key)
@@ -110,7 +110,7 @@ public:
 			int counter = 0;
 			if (counter > capacity)
 			{
-				return nullptr; //why are they doing this
+				return 0; //why are they doing this
 			}
 			counter++;
 
@@ -124,7 +124,7 @@ public:
 
 
 		}
-		return nullptr;
+		return 0;
 
 	}
 
@@ -154,7 +154,7 @@ public:
 	int HashTable()
 	{
 
-		/*HashMap<int, int> *h = new HashMap<int, int>;
+		createHashTable<int, int> *h = new createHashTable<int, int>;
 		h->insertNode(1, 1);
 		h->insertNode(2, 2);
 		h->insertNode(2, 3);
@@ -163,7 +163,7 @@ public:
 		cout << h->deleteNode(2) << endl;
 		cout << h->sizeofMap() << endl;
 		cout << h->isEmpty() << endl;
-		cout << h->get(2);*/
+		cout << h->get(2);
 
 		return 0;
 	}
