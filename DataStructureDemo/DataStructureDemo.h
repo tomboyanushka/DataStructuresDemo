@@ -6,6 +6,7 @@
 #include "createStack.h"
 #include "createQueue.h"
 #include "createLinkedList.h"
+#include "createHashTable.h"
 
 
 
@@ -16,6 +17,6 @@ public:
 	createStack<float> stackObj;
 	createQueue<float> queueObj;
 	createLinkedList list;
-
+	createHashTable<int, int> hashMap;
 
 };
