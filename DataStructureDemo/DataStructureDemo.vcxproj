@@ -147,6 +147,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="createHashTable.h" />
     <ClInclude Include="createLinkedList.h" />
     <ClInclude Include="createQueue.h" />
     <ClInclude Include="createStack.h" />
@@ -155,6 +156,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="createHashTable.cpp" />
     <ClCompile Include="createLinkedList.cpp" />
     <ClCompile Include="createQueue.cpp" />
     <ClCompile Include="createStack.cpp" />
