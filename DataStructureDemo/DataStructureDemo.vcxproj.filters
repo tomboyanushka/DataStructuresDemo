@@ -36,6 +36,12 @@
     <ClInclude Include="createHashTable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BinarySearchTree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BinarySearch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -54,6 +60,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="createHashTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinarySearchTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BinarySearch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

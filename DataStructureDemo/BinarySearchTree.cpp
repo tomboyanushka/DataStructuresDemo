@@ -7,7 +7,7 @@ BinarySearchTree::BinarySearchTree()
 
 BinarySearchTree::~BinarySearchTree()
 {
-	destroyTree();
+	//destroyTree();
 }
 
 void BinarySearchTree::destroyTree(BTNode* leaf)
