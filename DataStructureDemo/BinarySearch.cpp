@@ -1,5 +1,5 @@
 #include "BinarySearch.h"
-
+//recursive - puts it on the stack again and again so it is significantly slower
 
 int BinarySearch::binarySearch(int arr[], int l, int r, int x)
 {
@@ -28,13 +28,13 @@ void BinarySearch::runBinarySearch()
 	int arr[] = { 2,4,6,8,10 };
 	int n = sizeof(arr) / sizeof(arr[0]);
 	int x = 8;
-	int result = binarySearch(arr, 0, sizeof(arr), x);
+	int result = binarySearch(arr, 0, sizeof(arr)/sizeof(int) - 1, x);
 	if (result == -1)
 	{
 		std::cout << "Element is not present in array";
 	}
 	else
 	{
-		std::cout << "Element is present at index %d" << result;
+		std::cout << "Element is present at index " << result;
 	}
 }

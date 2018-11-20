@@ -20,5 +20,6 @@ public:
 	createLinkedList list;
 	createHashTable<int, int> hashMap;
 	BinarySearch bs;
+	void DoStuff();
 
 };
