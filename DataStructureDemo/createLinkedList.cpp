@@ -215,6 +215,26 @@ void createLinkedList::reverseList()
 
 }
 
+int createLinkedList::detectLoop(Node* list)
+{
+
+	
+	Node* slowPointer = list;
+	Node* fastPointer = list;
+
+	while (slowPointer && fastPointer && fastPointer->next)
+	{
+		slowPointer = slowPointer->next;
+		fastPointer = fastPointer->next->next;
+		if (slowPointer == fastPointer)
+		{
+			cout << "Loop found";
+			return 1;
+		}
+	}
+	return 0;
+}
+
 void createLinkedList::LinkedList()
 {
 	createLinkedList list;
@@ -222,7 +242,7 @@ void createLinkedList::LinkedList()
 	int flag = 1;
 	while (flag == 1)
 	{
-		cout << "\n Enter Choice: \n 1.Append \n 2.Prepend \n 3.Remove \n 4.Show List \n 5.Show Length \n 6.Print Middle Node \n 7.Swap Nodes \n 8.Reverse List \n 0.Exit---->  ";
+		cout << "\n Enter Choice: \n 1.Append \n 2.Prepend \n 3.Remove \n 4.Show List \n 5.Show Length \n 6.Print Middle Node \n 7.Swap Nodes \n 8.Reverse List 9. Detect Loop \n 0.Exit---->  ";
 		cin >> choice;
 		switch (choice)
 		{

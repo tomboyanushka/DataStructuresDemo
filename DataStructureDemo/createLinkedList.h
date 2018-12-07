@@ -33,5 +33,6 @@ public:
 	void printMiddle();
 	void swapNodes(int x, int y);
 	void reverseList();
+	int detectLoop(Node* list);
 };
 
