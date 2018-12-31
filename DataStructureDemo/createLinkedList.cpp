@@ -235,14 +235,30 @@ int createLinkedList::detectLoop(Node* list)
 	return 0;
 }
 
+int createLinkedList::sumOfNodes()
+{
+	Node* ptr = root;
+	int sum = 0;
+
+	while (ptr != NULL)
+	{
+		sum += ptr->data;
+		ptr = ptr->next;
+	}
+
+	return sum;
+}
+
 void createLinkedList::LinkedList()
 {
 	createLinkedList list;
 	int choice, value, swap1, swap2;
+	Node* head;
 	int flag = 1;
 	while (flag == 1)
 	{
-		cout << "\n Enter Choice: \n 1.Append \n 2.Prepend \n 3.Remove \n 4.Show List \n 5.Show Length \n 6.Print Middle Node \n 7.Swap Nodes \n 8.Reverse List 9. Detect Loop \n 0.Exit---->  ";
+		cout << "\n Enter Choice: \n 1.Append \n 2.Prepend \n 3.Remove \n 4.Show List \n 5.Show Length " 
+			"\n 6.Print Middle Node \n 7.Swap Nodes \n 8.Reverse List \n 9.Detect Loop \n 10.Sum of Nodes \n 0.Exit---->  ";
 		cin >> choice;
 		switch (choice)
 		{
@@ -277,6 +293,9 @@ void createLinkedList::LinkedList()
 			break;
 
 		case 8: list.reverseList();
+			break;
+
+		case 10: cout << list.sumOfNodes();
 			break;
 
 		case 0: flag = 0;

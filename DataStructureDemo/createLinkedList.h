@@ -34,5 +34,6 @@ public:
 	void swapNodes(int x, int y);
 	void reverseList();
 	int detectLoop(Node* list);
+	int sumOfNodes();
 };
 
